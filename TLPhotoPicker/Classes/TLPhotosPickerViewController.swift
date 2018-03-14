@@ -27,7 +27,7 @@ extension TLPhotosPickerViewControllerDelegate {
 }
 
 public struct TLPhotosPickerConfigure {
-    public var defaultCameraRollTitle = "Camera Roll"
+    public var defaultCameraRollTitle = "Choose photos to share"
     public var tapHereToChange = "Tap here to change"
     public var cancelTitle = "Cancel"
     public var doneTitle = "Done"
@@ -252,7 +252,7 @@ extension TLPhotosPickerViewController {
     
     fileprivate func updateTitle() {
         guard self.focusedCollection != nil else { return }
-        self.titleLabel.text = self.focusedCollection?.title
+        //self.titleLabel.text = self.focusedCollection?.title
     }
     
     fileprivate func reloadCollectionView() {
